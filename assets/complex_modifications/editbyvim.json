@@ -1,13 +1,5 @@
 {
   "title": "Edit by Vim",
-  "conditions": [
-    {
-      "type": "frontmost_application_if",
-      "bundle_identifiers": [
-        "^com\\.google\\.Chrome"
-      ]
-    }
-  ],
   "rules": [
     {
       "description": "command+e to edit by vim",
@@ -24,6 +16,14 @@
             { "key_code": "a" , "modifiers": ["left_command"]},
             { "key_code": "c" , "modifiers": ["left_command"]},
             { "shell_command": "~/dotfiles/bin/mgv 1>/tmp/debug 2>&1" }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome"
+              ]
+            }
           ]
         }
       ]
