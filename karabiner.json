@@ -105,6 +105,9 @@
                     "key_code": "japanese_kana"
                   }
                 ],
+                "parameters": {
+                  "basic.to_if_alone_timeout_milliseconds": 80
+                },
                 "type": "basic"
               }
             ]
@@ -642,4 +645,3 @@
     }
   ]
 }
-
