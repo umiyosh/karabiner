@@ -70,6 +70,22 @@
             "description": "英数・かなキーを他のキーと同時に押したときに、Commandキー, Optionキーを送信する",
             "manipulators": [
               {
+                "type": "basic",
+                "from": { "key_code": "japanese_kana" },
+                "to": [
+                  {
+                    "key_code": "japanese_kana"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "japanese_kana_key",
+                    "value": 1
+                  }
+                ]
+              },
+              {
                 "from": {
                   "key_code": "japanese_eisuu",
                   "modifiers": {
@@ -102,12 +118,34 @@
                 ],
                 "to_if_alone": [
                   {
-                    "key_code": "japanese_kana"
+                    "set_variable": { "name": "japanese_kana_key", "value": 1 }
                   }
                 ],
-                "parameters": {
-                  "basic.to_if_alone_timeout_milliseconds": 80
+                "to_delayed_action": {
+                  "to_if_invoked": [
+                    {
+                      "set_variable": {
+                        "name": "japanese_kana_key",
+                        "value": 0
+                      }
+                    }
+                  ],
+                  "to_if_canceled": [
+                    {
+                      "set_variable": {
+                        "name": "japanese_kana_key",
+                        "value": 0
+                      }
+                    }
+                  ]
                 },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "japanese_kana_key",
+                    "value": 0
+                  }
+                ],
                 "type": "basic"
               }
             ]
