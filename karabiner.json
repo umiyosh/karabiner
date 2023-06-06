@@ -75,6 +75,9 @@
                 "to": [
                   {
                     "key_code": "japanese_kana"
+                  },
+                  {
+                    "set_variable": { "name": "japanese_kana_key", "value": 0 }
                   }
                 ],
                 "conditions": [
@@ -391,26 +394,26 @@
                 "from": {
                   "key_code": "semicolon",
                   "modifiers": {
-                    "optional": ["any"]
+                    "mandatory": ["shift", "control"]
                   }
                 },
                 "to": [
                   {
-                    "key_code": "return_or_enter"
+                    "key_code": "semicolon"
                   }
                 ],
                 "type": "basic"
               },
               {
                 "from": {
-                  "key_code": "right_command",
+                  "key_code": "semicolon",
                   "modifiers": {
                     "optional": ["any"]
                   }
                 },
                 "to": [
                   {
-                    "key_code": "semicolon"
+                    "key_code": "return_or_enter"
                   }
                 ],
                 "type": "basic"
