@@ -535,6 +535,51 @@
                 "type": "basic"
               }
             ]
+          },
+          {
+            "description": "disbble command+:",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": ["^com\\.google\\.Chrome"],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "quote",
+                  "modifiers": {
+                    "mandatory": ["left_shift", "left_command"]
+                  }
+                },
+                "to": [],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Map Shift+Ctrl+Space to Slack Mute and Superwhisper Activation",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "spacebar",
+                  "modifiers": {
+                    "mandatory": ["shift", "control"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "spacebar",
+                    "modifiers": ["shift", "command"]
+                  },
+                  {
+                    "key_code": "spacebar",
+                    "modifiers": ["shift", "control"]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
