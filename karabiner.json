@@ -444,25 +444,6 @@
                 "type": "basic"
               }
             ]
-          },
-          {
-            "description": "ctrl+hでバックスペースキーに割り当てを行う ",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "h",
-                  "modifiers": {
-                    "mandatory": ["control"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "delete_or_backspace"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
           }
         ]
       },
@@ -499,4 +480,3 @@
     }
   ]
 }
-
