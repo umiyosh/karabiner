@@ -1,41 +1,35 @@
-# README Boilerplate
+# Karabiner-Elements 設定
 
-A template of README best practices to make your README simple to understand and easy to use. 
+このリポジトリには、macOS のキーボード動作をカスタマイズするための Karabiner-Elements 設定が含まれています。
 
-## Table of Contents
+## ショートカットキー一覧
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Support](#support)
-- [Contributing](#contributing)
-
-## Installation
-
-Download to your project directory, add `README.md`, and commit:
-
-```sh
-curl -LO http://git.io/Xy0Chg
-git add README.md
-git commit -m "Use README Boilerplate"
-```
-
-## Usage
-
-Replace the contents of `README.md` with your project's:
-
-- Name
-- Description
-- Installation instructions
-- Usage instructions
-- Support instructions
-- Contributing instructions
-
-Feel free to remove any sections that aren't applicable to your project.
-
-## Support
-
-Please [open an issue](https://github.com/fraction/readme-boilerplate/issues/new) for support.
-
-## Contributing
-
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and [open a pull request](https://github.com/fraction/readme-boilerplate/compare/).
+| ショートカットキー                              | 効果                                                                                  | 対象アプリケーション      |
+| ------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------- |
+| ⌘+W                                       | iTerm2において⌘+Wを無効化                                                               | iTerm2              |
+| Ctrl+[ (ansi/iso) / Ctrl+] (jis)            | Escキーと英数キーを送信                                                               | 全アプリケーション       |
+| 英数キー                                    | 単独押下の場合は英数キーとして動作、他キーと同時押しの場合は⌘キーとして機能                           | 全アプリケーション       |
+| かなキー                                    | 単独押下の場合はかなキーとして動作、他キーと同時押しの場合はOptionキーとして機能                     | 全アプリケーション       |
+| ⌥+H, ⌥+J, ⌥+K, ⌥+L                          | カーソルを左、下、上、右に移動                                                         | 全アプリケーション       |
+| ⌥+Shift+H, ⌥+Shift+J, ⌥+Shift+K, ⌥+Shift+L      | 選択状態でカーソルを左、下、上、右に移動                                                  | 全アプリケーション       |
+| ⌥+;                                       | Page Up                                                                             | 全アプリケーション       |
+| ⌥+/                                       | Page Down                                                                           | 全アプリケーション       |
+| ⌥+,                                       | Ctrl+A（カーソルを先頭へ）                                                            | 全アプリケーション       |
+| ⌥+Shift+,                                  | Shift+Ctrl+A（選択状態でカーソルを先頭へ）                                               | 全アプリケーション       |
+| ⌥+.                                       | Ctrl+E（カーソルを末尾へ）                                                            | 全アプリケーション       |
+| ⌥+Shift+.                                  | Shift+Ctrl+E（選択状態でカーソルを末尾へ）                                               | 全アプリケーション       |
+| セミコロン (;) 単独押下                       | 単独押下の場合はEnterとして動作（Shift+;、Shift+Ctrl+;の場合は元のセミコロンの動作）                  | 全アプリケーション       |
+| ⌘+2                                       | Touch Barの代替としてF2キーの動作を実行                                                 | 全アプリケーション       |
+| ⌘+7                                       | Touch Barの代替としてF7キーの動作を実行                                                 | 全アプリケーション       |
+| ⌘+8                                       | Touch Barの代替としてF8キーの動作を実行                                                 | 全アプリケーション       |
+| ¥                                         | ¥キー押下をAlt+¥として入力                                                            | 全アプリケーション       |
+| Alt+¥                                     | Alt+¥押下を¥キーとして入力                                                            | 全アプリケーション       |
+| ⌘+E                                       | Google Chromeで⌘+E押下時、選択範囲をコピー後、Vimエディタで編集を実行（シェルコマンド呼出）          | Google Chrome       |
+| ⌘+Shift+:                                  | Google Chromeにおいて⌘+Shift+:を無効化                                                  | Google Chrome       |
+| Shift+Ctrl+Space                           | SlackでミュートとSuperwhisperの切替（2通りの修飾キー送信）                                    | Slack               |
+| F3                                        | Mission Controlを起動                                                                 | 全アプリケーション       |
+| F4                                        | Launchpadを起動                                                                       | 全アプリケーション       |
+| F5                                        | 照度（イルミネーション）を下げる                                                       | 全アプリケーション       |
+| F6                                        | 照度（イルミネーション）を上げる                                                       | 全アプリケーション       |
+| F9                                        | メディアの早送り                                                                      | 全アプリケーション       |
+| Caps Lock                                  | Caps LockをLeft Controlとして動作                                                     | 全アプリケーション       |
