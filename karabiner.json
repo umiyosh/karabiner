@@ -17,15 +17,9 @@
                                 ],
                                 "from": {
                                     "key_code": "w",
-                                    "modifiers": {
-                                        "mandatory": ["command"]
-                                    }
+                                    "modifiers": { "mandatory": ["command"] }
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
+                                "to": [{ "key_code": "vk_none" }],
                                 "type": "basic"
                             }
                         ]
@@ -404,6 +398,7 @@
                     },
                     {
                         "description": "command+e to edit by vim",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "conditions": [
