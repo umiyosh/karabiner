@@ -470,6 +470,51 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Option app launcher: Arc, iTerm, cmux, Slack, Obsidian",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "1",
+                                    "modifiers": { "mandatory": ["option"] }
+                                },
+                                "to": [{ "shell_command": "/usr/bin/open -a 'Arc.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "2",
+                                    "modifiers": { "mandatory": ["option"] }
+                                },
+                                "to": [{ "shell_command": "/usr/bin/open -a 'iTerm.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "3",
+                                    "modifiers": { "mandatory": ["option"] }
+                                },
+                                "to": [{ "shell_command": "/usr/bin/open -a 'cmux.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "5",
+                                    "modifiers": { "mandatory": ["option"] }
+                                },
+                                "to": [{ "shell_command": "/usr/bin/open -a 'Slack.app'" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": { "mandatory": ["option"] }
+                                },
+                                "to": [{ "shell_command": "/usr/bin/open -a 'Obsidian.app'" }],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
