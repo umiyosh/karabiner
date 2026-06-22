@@ -4,6 +4,7 @@
 
 ## ショートカットキー一覧
 
+<!-- shortcuts-table:start -->
 | 説明 | 元のキー | 変更後のキー |
 |------|---------|-------------|
 | iTerm2でcmd+wを無効化 | `英数 + w` | 無効化 |
@@ -25,16 +26,15 @@
 | End | `かな + .` | `control + e` |
 | Home (Shift) | `かな + shift + ,` | `shift + control + a` |
 | End (Shift) | `かな + shift + .` | `shift + control + e` |
-| セミコロンをEnterに変更 | `;` | `Enter` |
 | Shift+セミコロンの挙動は変更なし | `shift + ;` | `shift + ;` |
-| 右英数をセミコロンに変更 | `right_英数` | `;` |
+| Shift+Ctrl+セミコロンをセミコロンに変更 | `shift + control + ;` | `;` |
+| セミコロンをEnterに変更 | `;` | `Enter` |
 | F2を英数+2に変更 | `英数 + 2` | `F2` |
 | F7を英数+7に変更 | `英数 + 7` | `F7` |
 | F8を英数+8に変更 | `英数 + 8` | `F8` |
 | ¥をAlt+¥に変更 | `¥` | `option + ¥` |
 | Alt+¥を¥に変更 | `option + ¥` | `¥` |
 | 英数+EでVimで編集 | `英数 + e` | `英数 + a` → `英数 + c` → `~/dotfiles/bin/mgv` |
-| 英数+: を無効化 | `英数 + shift + :` | 無効化 |
 | Shift+Ctrl+SpaceをSlack MuteとSuperwhisperに変更 | `shift + control + space` | `shift + 英数 + space` + `shift + control + space` |
 | Arcを起動または前面化 | `かな + 1` | `/usr/bin/open -a 'Arc.app'` |
 | iTermを起動または前面化 | `かな + 2` | `/usr/bin/open -a 'iTerm.app'` |
@@ -47,3 +47,4 @@
 | F5をキーボード輝度ダウンに変更 | `F5` | `illumination_decrement` |
 | F6をキーボード輝度アップに変更 | `F6` | `illumination_increment` |
 | F9を早送りに変更 | `F9` | `fastforward` |
+<!-- shortcuts-table:end -->

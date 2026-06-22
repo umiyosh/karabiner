@@ -5,7 +5,10 @@ lint:
 		--lint-complex-modifications \
    ./karabiner.json
 
-# update readme
 .PHONY: table
 table:
-	cat karabiner.json|sgpt --code "Readme.mdにたいしkarabiner.jsonよりREADME.mdのショートカットキー一覧表をmd形式で更新してください.optionとcommandは英数・かなにいれかえてるので それも意識すること"
+	python3 .codex/skills/karabiner-readme-table/scripts/update_readme_table.py
+
+.PHONY: table-check
+table-check:
+	python3 .codex/skills/karabiner-readme-table/scripts/update_readme_table.py --check

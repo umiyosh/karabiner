@@ -1,0 +1,4 @@
+interface:
+  display_name: "Karabiner README Table"
+  short_description: "Update README shortcut tables from Karabiner JSON"
+  default_prompt: "Use $karabiner-readme-table to update the README shortcut table after editing karabiner.json."
