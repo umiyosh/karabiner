@@ -36,6 +36,11 @@
 | 英数+EでVimで編集 | `英数 + e` | `英数 + a` → `英数 + c` → `~/dotfiles/bin/mgv` |
 | 英数+: を無効化 | `英数 + shift + :` | 無効化 |
 | Shift+Ctrl+SpaceをSlack MuteとSuperwhisperに変更 | `shift + control + space` | `shift + 英数 + space` + `shift + control + space` |
+| Arcを起動または前面化 | `かな + 1` | `/usr/bin/open -a 'Arc.app'` |
+| iTermを起動または前面化 | `かな + 2` | `/usr/bin/open -a 'iTerm.app'` |
+| cmuxを起動または前面化 | `かな + 3` | `/usr/bin/open -a 'cmux.app'` |
+| Slackを起動または前面化 | `かな + 5` | `/usr/bin/open -a 'Slack.app'` |
+| Obsidianを起動または前面化 | `かな + e` | `/usr/bin/open -a 'Obsidian.app'` |
 | Caps LockをControlに変更 | `caps_lock` | `control` |
 | F3をMission Controlに変更 | `F3` | `Mission Control` |
 | F4をLaunchpadに変更 | `F4` | `Launchpad` |
