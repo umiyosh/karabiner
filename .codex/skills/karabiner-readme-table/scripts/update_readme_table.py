@@ -126,10 +126,17 @@ def format_key_action(action: dict) -> str | None:
         parts.append(key_name(action["key_code"], from_key=False))
     elif "consumer_key_code" in action:
         parts.append(CONSUMER_KEY_NAMES.get(action["consumer_key_code"], action["consumer_key_code"]))
+    elif "pointing_button" in action:
+        parts.append(pointing_button_name(action["pointing_button"]))
     else:
         return None
 
     return " + ".join(parts)
+
+
+def pointing_button_name(button: str) -> str:
+    match = re.fullmatch(r"button(\d+)", button)
+    return f"マウス第{match.group(1)}ボタン" if match else button
 
 
 def simplify_shell_command(command: str) -> str:
@@ -246,6 +253,7 @@ def friendly_description(from_text: str, to_text: str) -> str | None:
         ("option + ¥", "¥"): "Alt+¥を¥に変更",
         ("英数 + e", "英数 + a → 英数 + c → ~/dotfiles/bin/mgv"): "英数+EでVimで編集",
         ("shift + control + space", "shift + 英数 + space + shift + control + space"): "Shift+Ctrl+SpaceをSlack MuteとSuperwhisperに変更",
+        ("shift + 英数 + s", "マウス第5ボタン"): "Aqua Voiceのハンズフリー起動 (SecureInput回避、docs/adr/0001)",
         ("caps_lock", "control"): "Caps LockをControlに変更",
         ("F3", "Mission Control"): "F3をMission Controlに変更",
         ("F4", "Launchpad"): "F4をLaunchpadに変更",

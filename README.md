@@ -7,6 +7,7 @@
 <!-- shortcuts-table:start -->
 | 説明 | 元のキー | 変更後のキー |
 |------|---------|-------------|
+| Aqua Voiceのハンズフリー起動 (SecureInput回避、docs/adr/0001) | `shift + 英数 + s` | `マウス第5ボタン` |
 | iTerm2でcmd+wを無効化 | `英数 + w` | 無効化 |
 | Ctrl+[を押したときに、escキーと英数キーを送信する (ANSI/ISO) | `control + [` | `escape` + `英数` |
 | Ctrl+]を押したときに、escキーと英数キーを送信する (JIS) | `control + ]` | `escape` + `英数` |
